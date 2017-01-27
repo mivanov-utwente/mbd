@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+
+
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphicx} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage{tabulary}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[usestackEOL]{stackengine}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\title{Managing Big Data Report \\ \small{Group 7}}
+
+\author{ Thomas Kolner$^{1}$, Wim Florijn$^{2}$, Jordy Michorius$^{3}$, and Marin Ivanov$^{4}$% <-this % stops a space
+\thanks{*This work was not supported by any organization}% <-this % stops a space
+\thanks{$^{1}$T. Kolner is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+        University of Twente, 7500 AE Enschede, The Netherlands
+        {\tt\small t.kolner at student.utwente.nl}}%
+\thanks{$^{2}$W. Florijn is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+        University of Twente, 7500 AE Enschede, The Netherlands
+        {\tt\small w.j.Florijn at student.utwente.nl}}%
+\thanks{$^{3}$J. Michorius is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+        University of Twente, 7500 AE Enschede, The Netherlands
+        {\tt\small j.a.r.michorius at student.utwente.nl}}%
+\thanks{$^{4}$M. Ivanov is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+        University of Twente, 7500 AE Enschede, The Netherlands
+        {\tt\small m.v.ivanov at student.utwente.nl}}%
+}
+
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{balance}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\bibliographystyle{IEEEtran}
+
+\begin{document}
+\strutlongstacks{T}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\input{Sections/Introduction.tex}
+\input{Sections/RelatedWork.tex}
+\input{Sections/Methodology.tex}
+\input{Sections/Results.tex}
+\input{Sections/Conclusion.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{refs}
+\vspace{50 mm}
+\balance
+
+\clearpage
+\twocolumn
+
+
+\end{document}

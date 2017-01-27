@@ -1,0 +1,31 @@
+\section{Introduction}
+%context
+Newspapers are a big part of our daily lives. They keep us up to date with the latest news and inform us about big events happening in the world\cite{hurricanes:newspaper}. Newspapers are also a great form of entertainment. With the rise of the Internet, more and more newspapers began digitalizing their papers and thus also their articles. This results in newspapers having enormous amounts of data which are ready to be analyzed. \\
+
+%need
+%this paragraph is not that fun to read, weird sentences.
+%also include that "professional" journalist write neutral articles overall.
+%the paragraph below (line 9) has been rewritten
+There are many elements which are contained in a newspaper article. One of these elements is tone of the article and with the enormous amount of articles, it could be rather easy to influence the people\cite{media:coverage} reading them. Thus one would like to know the underlying tone of articles.
+
+\subsection{Problem Statement}
+We all know that newspapers change the way in which people look at topics, so we would like to examine how articles present different topics. More concrete: are articles about specific topics written in a positive or a negative sense. According to the Wikipedia article about {\it de Volkskrant}\cite{volkskrant_wiki}, the daily used to be a leading centre-left Catholic broadsheet, but nowadays it is medium-sized centrist compact. Therefore our goal is to determine how political biased {\it de Volkskrant} is. \\
+%either use the right to right hypothesis or the null hypethesis, not both
+Our hypothesis is: \\
+
+\textit{“De Volkskrant is right to right-centrist motivated.”}\\\\
+Therefore our Null hypothesis is:\\
+
+\textit{'De Volkskrant is centrist to left-centrist motivated.'}\\
+
+There are other researchers who have done research in the field of newspaper analysis and language processing. Costantino et al.\cite{qualitativeinformation} explain how natural language processing and information extraction can be done. This can be used when determining whether an article is positive or negative. Furthermore, Ah-Hwee Tan has researched how text-mining and finding patterns in data can be done\cite{textmining}, which will help us when processing articles.\\
+
+\subsection{Task}
+Which brings us at the task at hand, where we will need to classify articles as either positive, negative or neutral. The articles that are used are written by {\it de Volkskrant}\cite{volkskrant}, which is a large Dutch newspaper. A recent work of Vossen et al.\cite{vossen_newsreader:_2016} uses Dutch newspapers as one of the sources for text mining, but the research is based largely on a previous work\cite{vossen_cross-lingual_2012} and focuses on building Event-Centric-Knowledge-Graphs. However, we want to determine the sentiment of an article by analyzing the text inside. \\
+
+A simple classification can be done and counting the positive and negative words and based on this ratio we can conclude whether an article is positive, negative or neutral. Boiy and Moens\cite{boiy_machine_2009} evaluate several classification models for opinion mining in multilingual Web content and provides a few ideas how to improve the classification. For instance, the study shows that negation and stemming prove beneficial for recall rate, while stemming also improves accuracy in Dutch language texts. All applications and operations on the data will be done using PySpark.\\
+
+\subsection{Objective}
+% Needs to be rewritten
+With this task, we hope to get an idea about the underlying tone of the articles written by {\it de Volkskrant}.
+With the upcoming elections are also going to determine how the political parties are projected in the articles. Due to also having access to the date, conclusions can be drawn about in what time period the most negative or positive articles are written. The results of our research will be presented in the form of graphs and/or heat maps to provide a visual representation. \\
